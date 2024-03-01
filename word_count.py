@@ -12,6 +12,10 @@ def load_input(input_directory):
     # un DataFrame de Pandas. Cada línea del archivo de texto debe ser una
     # entrada en el DataFrame.
     #
+    filenames = glob.glob(f"{input_directory}/*.txt")
+    print(filenames)
+
+load_input("input")
 
 
 def clean_text(dataframe):
