@@ -33,7 +33,7 @@ def clean_text(dataframe):
     dataframe["text"] = dataframe["text"].str.lower()
 
     # Remove punctuation
-    dataframe["text"] = dataframe["text"].str.replace(r"[^\w\s]", "")
+    #dataframe["text"] = dataframe["text"].str.replace(r"[^\w\s]", "")
     #Este primero elimina todos los signos de puntuación y borra los caracteres especiales
     dataframe["text"] = dataframe["text"].str.replace(".","")
     dataframe["text"] = dataframe["text"].str.replace(",","")
